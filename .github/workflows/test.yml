@@ -1,4 +1,4 @@
-name: Pipeline teste
+name:  Teste
 
 on:
     push:
@@ -6,8 +6,8 @@ on:
             - dev
 
 jobs:
-    validar-push-dev:
-    runs-on: ubuntu-latest
+    build:
+    runs-on: [self-hosted, linux, x64]
 
     steps:
         - name: Checkout index
